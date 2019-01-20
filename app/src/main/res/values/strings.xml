@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">LearnCodeOnline</string>
+    <string name="comp_name">Learn Code Online</string>
+    <string name="user_pref">com.learn.codeonline.user_pref</string>
+</resources>

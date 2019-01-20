@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#68BC0B</color>
+
+    <!-- Light Theme -->
+    <color name="whiteColor">#ffffff</color>
+    <color name="green1">#68BC0B</color>
+    <color name="green2">#a7e661</color>
+    <color name="green3">#FF4E9F07</color>
+    <color name="green4">#e9fdd3</color>
+    <color name="lightgray1">#b2b7b0</color>
+
+    <!--Dark Theme-->
+    <color name="green5">#FF94DA45</color>
+    <color name="gray1">#646464</color>
+    <color name="gray2">#8b8a8a</color>
+    <color name="gray3">#484848</color>
+    <color name="gray4">#e5e6e4</color>
+    <color name="offwhite">#FFEDEDED</color>
+
+</resources>

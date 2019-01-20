@@ -1,0 +1,400 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/view_signup_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/gray1">
+
+        <ImageView
+            android:id="@+id/signup_lco_logo"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="17dp"
+            android:layout_marginTop="80dp"
+            android:src="@drawable/lco_light" />
+
+        <TextView
+            android:id="@+id/signup_header_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/signup_lco_logo"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:text="Let's get your Account finished up :"
+            android:textColor="@color/gray4"
+            android:textSize="25sp"
+            android:typeface="monospace" />
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/sign_up_input_layout_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/signup_header_text"
+            android:layout_alignStart="@id/signup_header_text"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="16dp"
+            android:backgroundTint="@color/whiteColor"
+            android:theme="@style/TextLabelDark">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/green4"
+                android:foregroundTint="@color/green4"
+                android:hint="Email"
+                android:textColor="@color/whiteColor"
+                android:textColorHint="@color/gray4"
+                android:textSize="16sp" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/sign_up_input_layout_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/sign_up_input_layout_email"
+            android:layout_alignStart="@id/signup_header_text"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="16dp"
+            android:backgroundTint="@color/whiteColor"
+            android:theme="@style/TextLabelDark">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/whiteColor"
+                android:foregroundTint="@color/green4"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:textColor="@color/whiteColor"
+                android:textColorHint="@color/gray4"
+                android:textSize="16sp" />
+
+        </android.support.design.widget.TextInputLayout>
+
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/sign_up_input_layout_confirm_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/sign_up_input_layout_password"
+            android:layout_alignStart="@id/signup_header_text"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="16dp"
+            android:backgroundTint="@color/whiteColor"
+            android:theme="@style/TextLabelDark">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/whiteColor"
+                android:foregroundTint="@color/green4"
+                android:hint="Confirm Password"
+                android:inputType="textPassword"
+                android:textColor="@color/whiteColor"
+                android:textColorHint="@color/gray4"
+                android:textSize="16sp" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/signup_submit_fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/sign_up_input_layout_confirm_password"
+            android:layout_alignParentEnd="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="16dp"
+            android:backgroundTint="@color/gray3"
+            android:clickable="true"
+            android:scaleType="center"
+            android:src="@drawable/arrow_forward_icon"
+            android:theme="@style/AppThemeDark"
+            android:tint="@color/whiteColor"
+            android:visibility="invisible"
+            app:elevation="0dp" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/view_login_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/gray2">
+
+        <LinearLayout
+            android:id="@+id/login_header_bottom_line"
+            android:layout_width="35dp"
+            android:layout_height="6dp"
+            android:layout_below="@id/login_title_label_tv"
+            android:layout_alignStart="@id/login_title_label_tv"
+            android:layout_marginTop="4dp"
+            android:background="@color/green1"
+            android:orientation="horizontal" />
+
+        <TextView
+            android:id="@+id/login_title_label_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="41dp"
+            android:layout_marginTop="280dp"
+            android:text="Login"
+            android:textColor="@color/offwhite"
+            android:textSize="38sp" />
+
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/input_layout_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/login_title_label_tv"
+            android:layout_alignStart="@id/login_title_label_tv"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="16dp"
+            android:theme="@style/TextLabelDark">
+
+            <EditText
+                android:id="@+id/input_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/whiteColor"
+                android:foregroundTint="@color/lightgray1"
+                android:hint="Email"
+                android:inputType="textEmailAddress"
+                android:textColor="@color/whiteColor"
+                android:textColorHint="@color/gray4"
+                android:textSize="13sp" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/input_layout_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/input_layout_email"
+            android:layout_alignStart="@id/login_title_label_tv"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="16dp"
+            android:theme="@style/TextLabelDark">
+
+            <EditText
+                android:id="@+id/input_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/whiteColor"
+                android:foregroundTint="@color/lightgray1"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:textColor="@color/whiteColor"
+                android:textColorHint="@color/gray4"
+                android:textSize="13sp" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <Button
+            android:id="@+id/login_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/input_layout_password"
+            android:layout_alignStart="@id/login_title_label_tv"
+            android:layout_alignEnd="@id/input_layout_email"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/rounded_corner_green_button"
+            android:text="Get Started"
+            android:textColor="@color/whiteColor" />
+
+        <TextView
+            android:id="@+id/forgot_password_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/login_btn"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="Forgot Password"
+            android:textColor="@color/gray4"
+            android:textStyle="bold" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="6dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/not_a_member_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Not a member? "
+                android:textAlignment="viewEnd"
+                android:textColor="@color/gray4" />
+
+            <TextView
+                android:id="@+id/sign_up_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Sign up"
+                android:textColor="@color/green5"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/view_splashscreen_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/gray1">
+
+        <ImageView
+            android:id="@+id/imageview1"
+            android:layout_width="26dp"
+            android:layout_height="26dp"
+            android:layout_alignEnd="@+id/android_design_view"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="186dp"
+            android:layout_marginEnd="138dp"
+            android:rotation="148"
+            android:src="@drawable/ic_left_angle_bracket"
+            android:tint="@color/gray2" />
+
+
+        <ImageView
+            android:id="@+id/imageview3"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="37dp"
+            android:layout_marginTop="293dp"
+            android:rotation="340"
+            android:src="@drawable/ic_left_angle_bracket"
+            android:tint="@color/gray2" />
+
+
+        <ImageView
+            android:id="@+id/android_design_view"
+            android:layout_width="70dp"
+            android:layout_height="68dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="18dp"
+            android:layout_marginBottom="10dp"
+            android:rotation="6"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_android"
+            android:tint="@color/gray2" />
+
+
+        <ImageView
+            android:id="@+id/lco_light_logo_iv"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/lco_light" />
+
+
+        <TextView
+            android:id="@+id/splash_screen_title_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/lco_light_logo_iv"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="14dp"
+            android:text="@string/comp_name"
+            android:textColor="@color/lightgray1"
+            android:textSize="19sp"
+            android:textStyle="bold"
+            android:typeface="monospace" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="292dp"
+            android:layout_marginEnd="24dp"
+            android:rotation="8"
+            android:tint="@color/gray2"
+            app:srcCompat="@drawable/ic_screen_monitor" />
+
+        <ImageView
+            android:id="@+id/youtube_design_view"
+            android:layout_width="48dp"
+            android:layout_height="45dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="74dp"
+            android:layout_marginBottom="112dp"
+            android:tint="@color/gray2"
+            app:srcCompat="@drawable/ic_youtube" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="72dp"
+            android:layout_marginTop="92dp"
+            android:rotation="364"
+            android:tint="@color/gray2"
+            app:srcCompat="@drawable/ic_artificial_intelligence" />
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="70dp"
+            android:layout_marginEnd="45dp"
+            android:rotation="355"
+            android:tint="@color/gray2"
+            app:srcCompat="@drawable/ic_terminal" />
+
+
+        <ImageView
+            android:id="@+id/lco_light_logo_2_iv"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_above="@+id/lco_label_tv2"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="20dp"
+            android:src="@drawable/lco_light" />
+
+        <TextView
+            android:id="@+id/lco_label_tv2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="70dp"
+            android:text="Learn code online"
+            android:textColor="@color/lightgray1"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:typeface="monospace" />
+
+    </RelativeLayout>
+</FrameLayout>
