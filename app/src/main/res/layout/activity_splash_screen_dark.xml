@@ -46,7 +46,7 @@
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:backgroundTint="@color/green4"
+                android:backgroundTint="@color/whiteColor"
                 android:foregroundTint="@color/green4"
                 android:hint="Email"
                 android:textColor="@color/whiteColor"
